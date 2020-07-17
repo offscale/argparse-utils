@@ -1,3 +1,5 @@
+# Stolen from https://github.com/graingert/pkgutil-resolve-name/blob/7c53272/pkgutil_resolve_name.py
+
 """
 Resolve a name to an object.
 It is expected that `name` will be a string in one of the following

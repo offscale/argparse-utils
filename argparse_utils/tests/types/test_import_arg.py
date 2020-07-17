@@ -8,7 +8,7 @@ from argparse_utils.types.import_arg import import_arg
 
 
 class TestImportArg(TestCase):
-    def setUp(self) -> None:
+    def setUp(self):
         self.symbol_table = {}
         self.parser = ArgumentParser()
 
