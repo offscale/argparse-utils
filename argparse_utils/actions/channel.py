@@ -10,6 +10,6 @@ class ChannelAction(Action):
         if values.isdigit():
             values = int(values)
             if values not in (1, 3):
-                parser.error('channels must be `1` or `3`')
-            values = (None, 'grayscale', None, 'rgb')[values]
+                parser.error("channels must be `1` or `3`")
+            values = (None, "grayscale", None, "rgb")[values]
         setattr(namespace, self.dest, values)
