@@ -3,19 +3,13 @@
 from ast import parse
 from distutils.sysconfig import get_python_lib
 from functools import partial
-from os import path, listdir
-from platform import python_version_tuple
+from os import listdir, path
+from sys import version_info
 
-from setuptools import setup, find_packages
-from sys import version
+from setuptools import find_packages, setup
 
-if version[0] == "2":
-    from itertools import imap as map, ifilter as filter
-if python_version_tuple()[0] == "3":
-    imap = map
-    ifilter = filter
-else:
-    from itertools import imap, ifilter
+if version_info[0] == 2:
+    pass
 
 if __name__ == "__main__":
     package_name = "argparse_utils"
