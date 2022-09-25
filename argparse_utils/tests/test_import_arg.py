@@ -1,9 +1,8 @@
-
+import argparse
 from functools import partial
 from platform import python_version_tuple
-from unittest import TestCase, main as unittest_main
-
-import argparse
+from unittest import TestCase
+from unittest import main as unittest_main
 
 if python_version_tuple() < ("3", "8"):
     # Taken from https://github.com/python/cpython/pull/10205
@@ -19,7 +18,6 @@ if python_version_tuple() < ("3", "8"):
 import pip
 
 from argparse_utils.types.import_arg import import_arg
-
 
 
 class TestImportArg(TestCase):
